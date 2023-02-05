@@ -76,6 +76,13 @@ body {
   margin: 0px;
   padding: 0px;
   border-bottom: 1px solid #e7e9fc;
+  display: flex;
+}
+
+.header-cnt {
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 
 .header-logo {
@@ -94,6 +101,19 @@ body {
   color: var(--accent-color);
 }
 
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-left: 76px;
+}
+
+.header-list .header-item {
+  margin-right: 40px;
+}
+
+.header-list .header-item:last-child {
+  margin-right: 0;
+}
 .header-item a {
   font-weight: 500;
   font-size: 16px;
@@ -103,6 +123,10 @@ body {
 }
 
 .header-item-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+
   font-weight: 500;
   font-size: 16px;
   line-height: var(--typical-lh);
@@ -124,6 +148,12 @@ body {
 .header-item-link:hover,
 .header-item-link:focus {
   color: var(--accent-color);
+}
+.header-auth-list {
+  display: flex;
+}
+.header-auth-list .header-auth-item + .header-auth-item {
+  margin-left: 40px;
 }
 /*--------main page--------*/
 .main-paige {
@@ -200,6 +230,8 @@ body {
 .us-title {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
 .team-it {
