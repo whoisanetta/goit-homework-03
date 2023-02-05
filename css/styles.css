@@ -25,6 +25,7 @@ body {
 }
 .container {
   width: 1158px;
+  outline: 2px solid tomato;
 }
 .list {
   list-style: none;
@@ -41,10 +42,11 @@ body {
 }
 
 .item-after-title {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
+  color: var(--second-title-color);
 }
 
 .hidden {
@@ -126,7 +128,7 @@ body {
 /*--------main page--------*/
 .main-paige {
   background-color: #2e2f42;
-  outline: 2px solid tomato;
+  padding-bottom: 120px;
 }
 
 .main-paige-title {
@@ -165,9 +167,7 @@ body {
 /*----peculiarities----*/
 
 .peculiarities {
-  outline: 2px solid tomato;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .pec-it {
   margin-top: 0;
@@ -181,7 +181,34 @@ body {
 
 /*----what are we doing----*/
 .about {
-  outline: 2px solid tomato;
+}
+
+.title-about {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 72px;
+}
+
+.about-img {
+}
+
+/*----us/team----*/
+.us {
+  background-color: #f4f4fd;
+}
+
+.us-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team-it {
+  margin: 0;
+  padding-bottom: 8px;
+}
+.team-iat {
+  margin: 0;
+  padding-bottom: 32px;
 }
 
 /*-------footer--------*/
@@ -230,4 +257,11 @@ body {
 .portfolio-btn:focus {
   background-color: var(--hover-btn-color);
   color: var(--main-btn-color);
+}
+
+.item-after-title-sf {
+  font-size: 16px;
+  line-height: var(--typical-lh);
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
 }
