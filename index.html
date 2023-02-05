@@ -16,37 +16,41 @@
 
   <body>
     <!--Шапка сайта-->
-    <header>
-      <nav>
-        <a class="header-logo" href="./index.html"> <span>Web</span>Studio </a>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <a class="header-logo" href="./index.html">
+            <span>Web</span>Studio
+          </a>
 
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="header-item-link" href="./index.html">Studio</a>
-          </li>
-          <li class="header-item">
-            <a class="header-item-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="header-item">
-            <a class="header-item-link" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-item-link" href="./index.html">Studio</a>
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-      <address>
-        <ul class="header-auth-list list">
-          <li>
-            <a class="header-auth-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="header-auth-link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+        <address>
+          <ul class="header-auth-list list">
+            <li>
+              <a class="header-auth-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="header-auth-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <main>
@@ -56,41 +60,43 @@
         <button class="studio-btn" type="button">Order Service</button>
       </section>
       <!--Что мы делаем?-->
-      <section>
-        <h2 class="hidden">peculiarities</h2>
-        <ul class="peculiarities-list list">
-          <li>
-            <h3 class="item-title">Strategy</h3>
-            <p class="item-after-title">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li class="peculiarities-list">
-            <h3 class="item-title">Punctuality</h3>
-            <p class="item-after-title">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="peculiarities-list">
-            <h3 class="item-title">Diligence</h3>
-            <p class="item-after-title">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li>
-            <h3 class="item-title">Technologies</h3>
-            <p class="item-after-title">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+      <section class="peculiarities">
+        <div class="container-peculiarities">
+          <h2 class="hidden">peculiarities</h2>
+          <ul class="peculiarities-list list">
+            <li class="peculiarities-item">
+              <h3 class="item-title pec-it">Strategy</h3>
+              <p class="item-after-title pec-iat">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="peculiarities-item">
+              <h3 class="item-title pec-it">Punctuality</h3>
+              <p class="item-after-title pec-iat">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="peculiarities-item">
+              <h3 class="item-title pec-it">Diligence</h3>
+              <p class="item-after-title pec-iat">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="peculiarities-item">
+              <h3 class="item-title pec-it">Technologies</h3>
+              <p class="item-after-title pec-iat">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section>
+      <section class="about">
         <h2 class="title">What are we doing</h2>
 
         <ul class="about-list list">
@@ -118,7 +124,7 @@
         </ul>
       </section>
       <!--Наша команда-->
-      <section>
+      <section class="us">
         <h2 class="title">Our Team</h2>
 
         <ul class="us-list list">
@@ -128,7 +134,7 @@
               alt="a man in a blue t-shirt looking straight"
               width="264"
             />
-            <h3 class="item-title">Mark Guerrero</h3>
+            <h3 class="item-title team">Mark Guerrero</h3>
             <p class="item-after-title">Product Designer</p>
           </li>
           <li>
@@ -137,12 +143,12 @@
               alt="a man in a blue t-shirt looking to the side"
               width="264"
             />
-            <h3 class="item-title">Tom Ford</h3>
+            <h3 class="item-title team">Tom Ford</h3>
             <p class="item-after-title">Frontend Developer</p>
           </li>
           <li>
             <img src="./images/img3.jpg" alt="a women" width="264" />
-            <h3 class="item-title">Camila Garcia</h3>
+            <h3 class="item-title team">Camila Garcia</h3>
             <p class="item-after-title">Marketing</p>
           </li>
           <li>
@@ -151,7 +157,7 @@
               alt="a man in a grey t-shirt looking straight"
               width="264"
             />
-            <h3 class="item-title">Daniel Wilson</h3>
+            <h3 class="item-title team">Daniel Wilson</h3>
             <p class="item-after-title">UI Designer</p>
           </li>
         </ul>
