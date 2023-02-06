@@ -9,6 +9,11 @@
 цвет контактов #434455
 
 */
+
+*,
+::after ::before {
+  box-sizing: border-box;
+}
 :root {
   --main-title-color: #2e2f42;
   --second-title-color: #434455;
@@ -24,8 +29,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 1158px;
-  outline: 2px solid tomato;
+  /*outline: 2px solid tomato;*/
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .list {
   list-style: none;
@@ -73,16 +82,16 @@ body {
 
 /*--------header--------*/
 .header {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   border-bottom: 1px solid #e7e9fc;
   display: flex;
+  align-items: center;
 }
 
 .header-cnt {
   display: flex;
   align-items: center;
-  margin: auto;
 }
 
 .header-logo {
@@ -97,6 +106,7 @@ body {
   text-decoration: none;
   color: #2e2f42;
 }
+
 .header-logo > span {
   color: var(--accent-color);
 }
@@ -155,6 +165,10 @@ body {
 .header-auth-list .header-auth-item + .header-auth-item {
   margin-left: 40px;
 }
+
+.header-address {
+  margin-left: auto;
+}
 /*--------main page--------*/
 .main-paige {
   background-color: #2e2f42;
@@ -178,12 +192,17 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
+
   color: var(--main-btn-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
+
   border-radius: 4px;
   padding: 16px 32px;
+  min-width: 169px;
+  margin: auto;
+  display: block;
 }
 
 .studio-btn:hover,
@@ -197,16 +216,29 @@ body {
 /*----peculiarities----*/
 
 .peculiarities {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
+
+.peculiarities-list {
+  display: flex;
+}
+
+.peculiarities-item {
+  margin-left: 24px;
+}
+
+.peculiarities-list .peculiarities-item:first-child {
+  margin-left: 0;
+}
 .pec-it {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0;
+  padding-bottom: 8px;
 }
 
 .pec-iat {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 /*----what are we doing----*/
@@ -219,12 +251,36 @@ body {
   padding-bottom: 72px;
 }
 
-.about-img {
+.about-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
 }
 
+.about-item {
+  margin-left: 24px;
+}
+
+.about-list .about-item:first-child {
+  margin-left: 0;
+}
 /*----us/team----*/
 .us {
   background-color: #f4f4fd;
+}
+
+.us-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+
+.us-item {
+  margin-left: 24px;
+}
+
+.us-list .us-item:first-child {
+  margin-left: 0;
 }
 
 .us-title {
@@ -258,6 +314,13 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #f4f4fd;
+
+  padding-top: 100px;
+  padding-bottom: 16px;
+}
+
+.footer-text {
+  padding-bottom: 100px;
 }
 
 .footer-logo > span {
@@ -266,6 +329,8 @@ body {
 
 .footer-text {
   color: #e7e9fc;
+  width: 264px;
+  margin: 0;
 }
 
 /*--------portfolio--------*/
@@ -285,10 +350,26 @@ body {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--hover-btn-color);
   color: var(--main-btn-color);
+}
+
+.portfolio-filter-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*outline: 1px solid green;*/
+}
+.portfolio-item-btn {
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+
+.portfolio-filter-list .portfolio-item-btn + .portfolio-item-btn {
+  margin-left: 12px;
 }
 
 .item-after-title-sf {
@@ -296,4 +377,47 @@ body {
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
   color: var(--second-title-color);
+}
+.boxes-btn {
+  display: flex;
+}
+.boxes-cnt {
+}
+
+.boxes-list {
+  display: flex;
+  flex-wrap: wrap;
+  /*background-color: aqua;*/
+  justify-content: center;
+}
+
+.boxes-element {
+  width: 360px;
+  /*outline: 1px solid purple;*/
+  margin-right: 24px;
+  margin-bottom: 48px;
+  /*border: 1px solid purple;
+  #e7e9fc*/
+}
+
+.boxes-element:nth-child(3n) {
+  margin-right: 0;
+}
+
+.boxes-element:nth-last-child(-n + 3) {
+  margin-bottom: 120px;
+}
+
+.item-title-sf {
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.item-after-title-sf {
+  margin: 0;
+  padding-bottom: 32px;
+}
+
+.boxes-img {
+  padding-bottom: 32px;
 }
