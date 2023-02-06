@@ -33,7 +33,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
-  outline: 2px solid tomato;
+  /*outline: 2px solid tomato;*/
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -398,7 +398,7 @@ body {
 .boxes-list {
   display: flex;
   flex-wrap: wrap;
-  background-color: aqua;
+  /*background-color: aqua;*/
   justify-content: center;
 }
 
@@ -432,9 +432,7 @@ body {
 }
 
 .boxes-text {
-  padding-bottom: 32px;
-  padding-left: 16px;
-  border-left: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  border-top: none;
 }
