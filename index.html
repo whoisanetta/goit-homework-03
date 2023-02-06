@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -58,14 +65,15 @@
       <section>
         <div class="container main-paige">
           <h1 class="main-paige-title">
-            Effective Solutions for Your Business
-          </h1>
+            Effective Solutions <br>
+            for Your Business
+          <h1>
           <button class="studio-btn" type="button">Order Service</button>
         </div>
       </section>
       <!--Что мы делаем?-->
-      <section>
-        <div class="container peculiarities">
+      <section class="peculiarities">
+        <div class="container">
           <h2 class="hidden">peculiarities</h2>
           <ul class="peculiarities-list list">
             <li class="peculiarities-item">
@@ -144,8 +152,10 @@
                 alt="a man in a blue t-shirt looking straight"
                 width="264"
               />
-              <h3 class="item-title team-it">Mark Guerrero</h3>
-              <p class="item-after-title team-iat">Product Designer</p>
+              <div class="team-text">
+                <h3 class="item-title team-it">Mark Guerrero</h3>
+                <p class="item-after-title team-iat">Product Designer</p>
+              </div>
             </li>
             <li class="us-item">
               <img
@@ -153,13 +163,17 @@
                 alt="a man in a blue t-shirt looking to the side"
                 width="264"
               />
-              <h3 class="item-title team-it">Tom Ford</h3>
-              <p class="item-after-title team-iat">Frontend Developer</p>
+              <div class="team-text">
+                <h3 class="item-title team-it">Tom Ford</h3>
+                <p class="item-after-title team-iat">Frontend Developer</p>
+              </div>
             </li>
             <li class="us-item">
               <img src="./images/img3.jpg" alt="a women" width="264" />
-              <h3 class="item-title team-it">Camila Garcia</h3>
-              <p class="item-after-title team-iat">Marketing</p>
+              <div class="team-text">
+                <h3 class="item-title team-it">Camila Garcia</h3>
+                <p class="item-after-title team-iat">Marketing</p>
+              </div>
             </li>
             <li class="us-item">
               <img
@@ -167,8 +181,10 @@
                 alt="a man in a grey t-shirt looking straight"
                 width="264"
               />
-              <h3 class="item-title team-it">Daniel Wilson</h3>
-              <p class="item-after-title team-iat">UI Designer</p>
+              <div class="team-text">
+                <h3 class="item-title team-it">Daniel Wilson</h3>
+                <p class="item-after-title team-iat">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

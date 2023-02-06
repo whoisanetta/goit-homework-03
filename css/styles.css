@@ -14,6 +14,7 @@
 ::after ::before {
   box-sizing: border-box;
 }
+
 :root {
   --main-title-color: #2e2f42;
   --second-title-color: #434455;
@@ -32,7 +33,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
-  /*outline: 2px solid tomato;*/
+  outline: 2px solid tomato;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -124,6 +125,7 @@ body {
 .header-list .header-item:last-child {
   margin-right: 0;
 }
+
 .header-item a {
   font-weight: 500;
   font-size: 16px;
@@ -150,6 +152,7 @@ body {
   text-decoration: none;
   color: #434455;
 }
+
 .header-auth-link:hover,
 .header-auth-link:focus {
   color: var(--accent-color);
@@ -159,9 +162,11 @@ body {
 .header-item-link:focus {
   color: var(--accent-color);
 }
+
 .header-auth-list {
   display: flex;
 }
+
 .header-auth-list .header-auth-item + .header-auth-item {
   margin-left: 40px;
 }
@@ -169,10 +174,12 @@ body {
 .header-address {
   margin-left: auto;
 }
+
 /*--------main page--------*/
 .main-paige {
   background-color: #2e2f42;
-  padding-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .main-paige-title {
@@ -234,11 +241,13 @@ body {
 .pec-it {
   margin: 0;
   padding-bottom: 8px;
+  width: 264px;
 }
 
 .pec-iat {
   margin: 0;
   padding-bottom: 0;
+  width: 264px;
 }
 
 /*----what are we doing----*/
@@ -247,8 +256,7 @@ body {
 
 .title-about {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .about-list {
@@ -267,16 +275,18 @@ body {
 /*----us/team----*/
 .us {
   background-color: #f4f4fd;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .us-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 120px;
 }
 
 .us-item {
   margin-left: 24px;
+  background-color: #fff;
 }
 
 .us-list .us-item:first-child {
@@ -285,23 +295,25 @@ body {
 
 .us-title {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-it {
   margin: 0;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 .team-iat {
   margin: 0;
   padding-bottom: 32px;
+  text-align: center;
 }
 
 /*-------footer--------*/
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   font-family: "Raleway";
@@ -314,13 +326,10 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #f4f4fd;
-
-  padding-top: 100px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-text {
-  padding-bottom: 100px;
 }
 
 .footer-logo > span {
@@ -334,7 +343,10 @@ body {
 }
 
 /*--------portfolio--------*/
-
+.box-sec {
+  padding-top: 120px;
+  padding-bottom: 96px;
+}
 .portfolio-btn {
   font-family: "Roboto";
   font-weight: 500;
@@ -364,7 +376,6 @@ body {
   /*outline: 1px solid green;*/
 }
 .portfolio-item-btn {
-  margin-top: 96px;
   margin-bottom: 72px;
 }
 
@@ -387,7 +398,7 @@ body {
 .boxes-list {
   display: flex;
   flex-wrap: wrap;
-  /*background-color: aqua;*/
+  background-color: aqua;
   justify-content: center;
 }
 
@@ -405,19 +416,25 @@ body {
 }
 
 .boxes-element:nth-last-child(-n + 3) {
-  margin-bottom: 120px;
+  margin-bottom: 0;
 }
 
 .item-title-sf {
   margin: 0;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .item-after-title-sf {
   margin: 0;
-  padding-bottom: 32px;
 }
 
 .boxes-img {
+}
+
+.boxes-text {
   padding-bottom: 32px;
+  padding-left: 16px;
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
