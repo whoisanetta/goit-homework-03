@@ -34,8 +34,8 @@ body {
   margin-right: auto;
   width: 1158px;
   /*outline: 2px solid tomato;*/
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .list {
   list-style: none;
@@ -178,6 +178,9 @@ body {
 /*--------main page--------*/
 .main-paige {
   background-color: #2e2f42;
+}
+
+.main-paige-cnt {
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -252,6 +255,7 @@ body {
 
 /*----what are we doing----*/
 .about {
+  padding-bottom: 120px;
 }
 
 .title-about {
@@ -262,7 +266,6 @@ body {
 .about-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 120px;
 }
 
 .about-item {
@@ -289,6 +292,11 @@ body {
   background-color: #fff;
 }
 
+.team-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .us-list .us-item:first-child {
   margin-left: 0;
 }
@@ -305,7 +313,6 @@ body {
 }
 .team-iat {
   margin: 0;
-  padding-bottom: 32px;
   text-align: center;
 }
 
@@ -329,14 +336,14 @@ body {
   margin-bottom: 16px;
 }
 
-.footer-text {
-}
-
 .footer-logo > span {
   color: var(--accent-color);
 }
 
 .footer-text {
+  font-size: 16px;
+  line-height: var(--typical-lh);
+  letter-spacing: 0.02em;
   color: #e7e9fc;
   width: 264px;
   margin: 0;
@@ -400,12 +407,12 @@ body {
   flex-wrap: wrap;
   /*background-color: aqua;*/
   justify-content: center;
+  column-gap: 24px;
 }
 
 .boxes-element {
   width: 360px;
   /*outline: 1px solid purple;*/
-  margin-right: 24px;
   margin-bottom: 48px;
   /*border: 1px solid purple;
   #e7e9fc*/
