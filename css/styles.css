@@ -241,7 +241,7 @@ body {
 }
 .pec-it {
   margin: 0;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   width: 264px;
 }
 
@@ -350,7 +350,7 @@ body {
 /*--------portfolio--------*/
 .box-sec {
   padding-top: 120px;
-  padding-bottom: 96px;
+  padding-bottom: 120px;
 }
 .portfolio-btn {
   font-family: "Roboto";
